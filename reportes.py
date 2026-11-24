@@ -18,7 +18,7 @@ resultados = conexion.execute(consulta).fetchall()
 # 4. Mostrarlos
 
 for forma, total in resultados:
-    print(f"{forma}: {total}")
+    print(f"{forma}: ${total:,}".replace(',', '.'))
 
 # 5. cerrar la conexión
 
